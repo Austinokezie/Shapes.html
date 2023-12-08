@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    /* background-color: black; */
 
 }
 .game{
@@ -12,27 +12,61 @@ body{
     text-align: center;
     margin-top: 20px;
 }
-.contact{
+.button{
     text-transform: uppercase;
     color: whitesmoke;
-    text-align: center;
+    margin: auto;
     margin-top: 25px;
+    padding: 5px 2px;
+    border: 2px solid;
+    
+
 }
 
 
 .gridboxes{
     display: grid;
-    grid-template-columns: 5rem 5rem 5rem;
+    grid-template-columns: 100px 100px 100px;
     gap: 10px;
-    justify-content: center;
+    place-content: center;
     margin-top: 80px;
+    grid-template-areas: "user user user";
 
 }
 .gridboxes div{
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     border: 1.5px solid whitesmoke;
     width: 100%;
     height: 100px;
-    
+    display: flex;    
+    justify-content: center;
+    align-items: center;
    
+}
+
+.gridboxes .divone{
+    grid-area: user;
+}
+.divtwo{
+    grid-area: chair;
+}
+.divthree{
+    grid-area: dog;
+
+
+}
+.divthree{
+    grid-area: cat;
+    
+
+}
+.divthree{
+    grid-area: egg;
+    
+
+}
+.divthree{
+    grid-area: cat;
+    
+
 }
